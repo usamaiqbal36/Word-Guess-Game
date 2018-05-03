@@ -1,10 +1,5 @@
-// GLOBAL VARIABLES (accessible by all functions)
-// ==================================================================================================
 
-// Array of Word Options (all lowercase).
-var wordsList = ["apple", "orange", "peach", "pineapple", "mango","banana", "grapes"];
-
-// Computer selected solution will be held here.
+var fruitsList = ["apple", "orange", "peach", "pineapple", "mango","banana", "grapes"];
 var chosenWord = "";
 
 // This will break the solution into individual letters to be stored in array.
@@ -39,7 +34,7 @@ function startGame() {
   numGuesses = 9;
 
   // Solution chosen randomly from wordList.
-  chosenWord = wordsList[Math.floor(Math.random() * wordsList.length)];
+  chosenWord = fruitsList[Math.floor(Math.random() * fruitsList.length)];
 
   // The word is broken into individual letters.
   lettersInChosenWord = chosenWord.split("");
